@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+/* comment  */
+<html>
+<head>
+<style>
+title {
+	color: white;
+	font-size: 50px;
+}
+body { background-color: #090d18;
+}
+h1 {
+	font-family:"Audiowide", sans-serif;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+p.maneater{
+	color: white;
+	text-align: center;
+	font-family: 'Syne Mono';
+	font-size: 16px;
+	margin-right: 160px;
+	margin-left: 160px;
+}
+p.julania{
+	color: #D62246;
+	text-align: center;
+	font-family: 'Varela Round';
+	font-size: 16px;
+	margin-right: 160px;
+	margin-left: 160px;
+	background-color: white;
+	background-size: 160%;
+	padding: 20px;
+}
+p.cJulania{
+	color: #D62246;
+	text-align: center;
+	font-family: 'Varela Round';
+	font-size: 16px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+p.hope{
+	color: #F8C462;
+	text-align: left;
+	font-family: 'Blinker';
+	font-size: 16px;
+	margin-right: 160px;
+	margin-left: 160px;
+	background-color: #5F5858;
+	padding: 20px;
+}
+p.cHope{
+	color: #F8C462;
+	text-align: left;
+	font-family: 'Blinker';
+	font-size: 16px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+ /* slide out hover columns for same time text */
+.columns{
+    width:130px; 
+    height:100%;
+    float:left; 
+    position:absolute; 
+    -moz-transition:all 0.5s linear;
+    display: flex;
+	flex-direction: row;
+	overflow:hidden;
+	padding: 10px
+}
+.columns:hover{
+	width:90%; 
+	overflow:auto; 
+	z-index:1;
+	display: flex;
+	flex-direction: row;
+	padding: 20px
+}
+.col1{background-color: white;height:530px;}
+.col2{background-color:#5F5858; height:68%;}
+.col3{background-color:black;}
+ /* button used to open and close the letter */
+.collapsible {
+  background-image: url('button1.png');
+  background-color: #090d18;
+  font-family: 'Turret Road';
+  color: #090d18;
+  cursor: pointer;
+  padding: 16px;
+  width: 600px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 19px;
+  margin-left: 17%;
+  margin:auto;
+  display:block;
+}
+.active, .collapsible:hover {
+   color: #00C2D1;
+}
+.content {
+  padding: 80px;
+  display: none;
+  overflow: hidden;
+  width: 440px;
+  margin-left: 17%;
+  font-family: 'Atomic Age';
+  color: #e6b24c;
+  background-image: url("redCard.png");
+  background-repeat: repeat;
+  margin:auto;
+  display:block;
+} 
+/* tooltip used to add maneater comments on letter */
+.thought {
+  position: relative;
+  display: inline-block;
+}
+.thought .thoughtText {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: 'Syne Mono';
+  font-size: 14px;
+  text-indent: 0px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.thought:hover .thoughtText {
+  visibility: visible;
+}
+</style>
